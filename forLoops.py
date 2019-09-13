@@ -10,5 +10,15 @@ for friend in friends:
     # Loops thru the array and prints out each element in the array 
 
 # A loop of numbers
+# range (starting value, ending value, increment value)
 for index in range(1,11):
     print index
+
+# looping through an array is comming for For Loops
+
+
+for index in range(5):
+    if index == 0:
+        print("first iteration")
+    else:
+        print("Not FIrst")
