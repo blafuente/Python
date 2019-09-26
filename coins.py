@@ -22,7 +22,7 @@ penny_count = 0
 # ex: $0.75 = three quarters(25) 
 # ex: $0.43 = one quarter(25) + one dime(10) + one nickle(5) + three pennies(1)
 
-input_value = int(input("Enter a cents value: "))
+input_value = int(input("Enter a cents value(0-99): "))
 first_value = input_value
 # print input_value
 
@@ -64,3 +64,30 @@ print("You'll recive " + str(quarter_count) + " quarter(s). ")
 print("You'll recive " + str(dime_count) + " dime(s). ")
 print("You'll recive " + str(nickle_count) + " nickle(s). ")
 print("You'll recive " + str(penny_count) + " penny(ies). ")
+
+# def centsRegister(input_value):
+#     quarter_count = 0
+#     dime_count = 0
+#     nickle_count = 0
+#     penny_count = 0
+    
+#     if input_value >= 25:
+#         quarter_count = (input_value/25) * 1
+#         input_value -= (quarter_count * 25)
+#     if input_value >= 10:
+#         dime_count = (input_value/10) * 1
+#         input_value -= (dime_count * 10)
+#     if input_value >= 5:
+#         nickle_count = (input_value/5) * 1
+#         input_value -= (nickle_count * 5)
+#     if input_value >= 1:
+#         penny_count = (input_value/1) * 1
+#         input_value -= (penny_count * 1)
+
+#     print( "You've given me " + str(first_value) + " cents.") 
+#     print("You'll recive " + str(quarter_count) + " quarter(s). ")
+#     print("You'll recive " + str(dime_count) + " dime(s). ")
+#     print("You'll recive " + str(nickle_count) + " nickle(s). ")
+#     print("You'll recive " + str(penny_count) + " penny(ies). ")
+
+# centsRegister(input_value)
